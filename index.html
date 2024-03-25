@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GALACTICOS</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('logo.jpg'); /* Replace 'background-image.jpg' with your image file */
+        background-size: cover;
+        background-position: center;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .loading-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2F3C7E;
+        
+        z-index: 9999;
+    }
+    .loading-text {
+        font-size: 70px;
+        font-style: italic;
+        font: outline;
+        outline-offset:1cm;
+        outline-style: dotted;
+        font-family:fantasy;
+        align-items: center;
+        color:black;
+        color: #FBEAEB;
+    }
+    .loading-img{
+        align-items: center;
+
+    }
+    .team-container {
+        max-width: 600px;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    .team {
+        color: #fff;
+        font-family:fantasy;
+        font-style: italic;
+        font-weight:1;
+        font-size: 40px;
+    }
+    .team-name {
+        font-size: 34px;
+        margin-bottom: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    .member-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .member {
+        font-size: 25px;
+        border-bottom: 4px solid #ccc;
+        padding: 10px 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        
+    }
+    .member:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
+</head>
+<body>
+    <div class="loading-page">
+        <div class="loading-text">Team Galacticos </div>
+          
+                    
+        
+    </div>
+<div class="overlay">
+    <div class="team-container">
+        <h1 class="team">Team Galacticos(No.1)</h1>
+        <br></br>
+        <div class="team-name">" The Best "</div>
+        <br></br>
+        <br></br>
+        <ul class="member-list">
+            
+            <li class="member">Alan :          The Skipper
+                <li><img src="alan.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            
+            <li class="member">Jesna: The Co-Pilot
+                <li><img src="jesna.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            <li class="member">Akash: The Dynamic One 
+                <li><img src="akash.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            <li class="member">Alby: 
+                <li><img src="alby.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            <li class="member">Arjun: The Technical Expert
+                <li><img src="arjun.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            <li class="member">Catherine: 
+                <li><img src="catherine.jpg" width="300" height="250"></li>
+                <br></br>
+            </li>
+            <li class="member">Dona: 
+                <li><img src="dona.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            <li class="member">Ashik: The Movie Freak
+                <li><img src="ashik.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+            <li class="member">Afrin: The Musician 
+                <li><img src="afrin.jpg" width="300" height="300"></li>
+                <br></br>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    // Show loading page for 2 seconds
+    setTimeout(function(){
+        document.querySelector('.loading-page').style.display = 'none';
+        document.querySelector('.team-container').style.display = 'block';
+    }, 4000);
+</script>
+</body>
+</html>
