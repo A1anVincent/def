@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team and Members</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+    }
+    .loading-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2F3C7E;
+        
+        z-index: 9999;
+    }
+    .loading-text {
+        font-size: 70px;
+        font-style: italic;
+        font: outline;
+        outline-offset:1cm;
+        outline-style: dotted;
+        font-family:fantasy;
+        align-items: center;
+        color:black;
+        color: #FBEAEB;
+    }
+    .loading-img{
+        align-items: center;
+
+    }
+    .team-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        display: none;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    .team-name {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .member-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .member {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    .member:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+</head>
+<body>
+<div class="loading-page">
+    <div class="loading-text">Team Galacticos </div>
+      
+                
+    
+</div>
+<div class="team-container">
+    <h1>Team Name</h1>
+    <div class="team-name">Team Alpha</div>
+    <ul class="member-list">
+        <li class="member">Member 1</li>
+        <li class="member">Member 2</li>
+        <li class="member">Member 3</li>
+        <li class="member">Member 4</li>
+        <li class="member">Member 5</li>
+        <li class="member">Member 6</li>
+        <li class="member">Member 7</li>
+        <li class="member">Member 8</li>
+        <li class="member">Member 9</li>
+    </ul>
+</div>
+
+<script>
+    // Show loading page for 2 seconds
+    setTimeout(function(){
+        document.querySelector('.loading-page').style.display = 'none';
+        document.querySelector('.team-container').style.display = 'block';
+    }, 3000);
+</script>
+</body>
+</html>
